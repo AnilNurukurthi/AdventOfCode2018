@@ -5,6 +5,8 @@ frequencies_file = open('data\input1.txt', 'r')
 def getFinalFrequency():
     print(reduce(lambda x, y : x + y, map(lambda x: int(x), frequencies_file.readlines())))
 
+
+# Needs to be more efficient
 def getFirstRepeatedFrequency():
     freq_dict = {0: 1}
     cum_freq = 0
